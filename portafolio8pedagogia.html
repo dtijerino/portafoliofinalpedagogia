@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Final de Pedagogía - Daniel Tijerino Cerón</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-bg: #f4f7f6;
+            --card-bg: #ffffff;
+            --accent-color: #0056b3;
+            --text-main: #333333;
+            --text-muted: #666666;
+            --hero-gradient-1: #1a2980;
+            --hero-gradient-2: #26d0ce;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--primary-bg);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Hero Section / Portada */
+        .hero {
+            background: linear-gradient(135deg, var(--hero-gradient-1) 0%, var(--hero-gradient-2) 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .university-logo {
+            max-width: 250px;
+            margin-bottom: 20px;
+            background-color: white; /* Por si el logo tiene transparencias oscuras */
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .hero-data {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .hero-data p {
+            font-size: 1.1rem;
+            margin: 5px 0;
+            font-weight: 600;
+        }
+
+        .hero-data span {
+            font-weight: 400;
+        }
+
+        /* Contenedor Principal */
+        .container {
+            max-width: 1000px;
+            margin: -40px auto 40px auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Tarjetas de Contenido */
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 4px solid var(--accent-color);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            color: var(--accent-color);
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .card h3 {
+            color: #2c3e50;
+            margin: 25px 0 10px 0;
+            font-size: 1.3rem;
+        }
+
+        .card p {
+            margin-bottom: 15px;
+            text-align: justify;
+            color: var(--text-muted);
+        }
+
+        /* Estilo para la Dedicatoria */
+        .dedicatoria-card {
+            background-color: #ffffff;
+            border-left: 6px solid #f39c12;
+            border-top: none;
+            padding: 30px;
+            font-style: italic;
+        }
+
+        .dedicatoria-card strong {
+            display: block;
+            font-size: 1.2rem;
+            color: #d35400;
+            margin-bottom: 10px;
+            font-style: normal;
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 40px 15px;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .card {
+                padding: 25px;
+            }
+            .container {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <img src="https://www.elempleo.com/cr/sitio-empresarial/CompanySites/universidad-castro-carazo/resources/images/logo-social.png" alt="Logo Universidad Castro Carazo" class="university-logo">
+        <h1>Portafolio Final: Innovación en Pedagogía</h1>
+        
+        <div class="hero-data">
+            <p>Carrera: <span>Licenciatura en Ciencias de la Educación con énfasis en Docencia</span></p>
+            <p>Curso: <span>LD5013 Introducción a la Pedagogía</span></p>
+            <p>Docente: <span>Carmen Amelia Ulate Q.</span></p>
+            <p>Estudiante: <span>Daniel Tijerino Cerón</span></p>
+            <p>Fecha: <span>6 de marzo de 2026</span></p>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <section class="card dedicatoria-card">
+            <strong>A la docente Carmen Amelia Ulate Q.</strong>
+            <p>Este portafolio representa el cierre de un bimestre de aprendizaje riguroso. Agradezco la exigencia académica y las herramientas metodológicas brindadas durante el curso de Introducción a la Pedagogía. Estas bases son fundamentales para estructurar mi transición profesional y comprender que la innovación educativa no reside en las herramientas, sino en la capacidad de transformar la dinámica del aula. Gracias por orientar este proceso con profesionalismo.</p>
+        </section>
+
+        <section class="card">
+            <h2>1. SÍNTESIS DE LA INFORMACIÓN: TEMAS APRENDIDOS</h2>
+            <p>Este portafolio recopila y sintetiza tres propuestas metodológicas enfocadas en transformar el rol del estudiante y del docente mediante la evaluación formativa y el aprendizaje activo:</p>
+            
+            <h3>Tema 1: Creación de Videojuegos como Evaluación Formativa</h3>
+            <p>El "Aprendizaje Basado en la Creación de Videojuegos" no es un simple recurso lúdico; es un motor estructurado de evaluación formativa. En el desarrollo de software, el proceso exige iteración constante: programar, probar, identificar errores (<em>debugging</em>) y corregir en tiempo real. Al trasladar esta lógica al aula, se rompe con la evaluación sumativa tradicional. El estudiante no es penalizado por equivocarse; el error se convierte en un dato necesario y obligatorio para que el sistema funcione. Se evalúa y retroalimenta la capacidad de resolución de problemas durante la creación, no solo el producto final.</p>
+
+            <h3>Tema 2: Innovación en la Enseñanza del Inglés</h3>
+            <p>La propuesta de Sinia Gallardo expone que la enseñanza tradicional centrada en gramática y memorización es ineficaz para desarrollar competencias reales. La innovación radica en utilizar el aprendizaje basado en tareas y el <em>mobile learning</em> para descentralizar el conocimiento. El docente deja de ser un transmisor y pasa a ser un facilitador que fomenta la práctica activa (escuchar, hablar, leer, escribir) en entornos cotidianos, conectando el idioma con la realidad del alumno para aumentar su motivación.</p>
+
+            <h3>Tema 3: Metodología PechaKucha y el Proyecto "Aprende y enseña al grado menor"</h3>
+            <p>Valentina propone una estrategia fundamentada en el constructivismo social y el aprendizaje colaborativo. Estudiantes de grados superiores investigan y enseñan a los de grados inferiores. Esta metodología demuestra que la evaluación formativa y el desarrollo de habilidades blandas (liderazgo, responsabilidad, expresión oral) pueden lograrse mediante dinámicas de interacción entre pares.</p>
+        </section>
+
+        <section class="card">
+            <h2>2. CAPACIDAD DE AUTOANÁLISIS Y PENSAMIENTO CRÍTICO</h2>
+            <p>El hilo conductor de estas tres propuestas es la descentralización del docente. El profesor ya no es el único poseedor del conocimiento. Ya sea en la enseñanza de un idioma, en la programación o en la tutoría entre pares, el educador asume el rol de arquitecto de experiencias, orientando y supervisando la calidad de la información mientras el alumno construye su propio aprendizaje.</p>
+            <p>Un análisis crítico de estas metodologías revela un sesgo común en la educación actual: asociar obligatoriamente la innovación con recursos tecnológicos costosos. Si bien la creación de videojuegos o el <em>mobile learning</em> dependen de una infraestructura específica, el proyecto de tutoría entre grados demuestra que la verdadera disrupción pedagógica requiere, ante todo, diseño estratégico, organización y compromiso. La herramienta (sea un motor de desarrollo o material didáctico básico) es secundaria; el éxito radica en que el aprendizaje sea significativo y aplicable al contexto del estudiante.</p>
+        </section>
+
+        <section class="card">
+            <h2>3. REFLEXIÓN SOBRE EL PROPIO TRABAJO Y PROFUNDIDAD</h2>
+            <p>La elaboración de este portafolio y la síntesis exigida por el formato PechaKucha exponen una fricción real en mi práctica profesional. Al integrar la experiencia en desarrollo de sistemas con la realidad pedagógica de un Colegio Técnico Profesional, el choque de paradigmas es evidente. La mentalidad de la ingeniería es estructurada, exacta y binaria; sin embargo, el aula es un entorno dinámico, subjetivo y que requiere alta flexibilidad.</p>
+            <p>Mi propuesta de utilizar videojuegos exige que los estudiantes adopten un pensamiento lógico-matemático que no todos poseen de entrada. Mi verdadero reto como docente no es enseñar a programar, sino adaptar la instrucción técnica para evitar la frustración del estudiante frente a la complejidad. Comprendo que la innovación fracasa si intento imponer la rigidez del código sobre el proceso humano de aprendizaje. Debo diseñar entornos donde el error lógico o de sintaxis no sea visto como un fracaso académico punible, sino como el paso natural e indispensable dentro del ciclo de la evaluación formativa.</p>
+        </section>
+
+        <section class="card">
+            <h2>4. CONCLUSIONES</h2>
+            <p>La innovación pedagógica —ya sea mediante tecnología, metodologías comunicativas o aprendizaje colaborativo— tiene un único objetivo funcional: transformar el aula en un ecosistema de aprendizaje activo. Modificar los materiales de clase es un esfuerzo inútil si no se alteran las dinámicas de poder y comunicación. Empoderar al estudiante significa darle las herramientas lógicas y sociales para que tome el control de su proceso formativo.</p>
+            <p>Como profesionales de la educación, nuestra competencia central no radica en dominar una pantalla o un software específico, sino en la capacidad de estructurar, guiar y adaptar nuestras metodologías para resolver los problemas reales del entorno educativo, convirtiendo el error en la principal herramienta de aprendizaje.</p>
+        </section>
+
+    </div>
+</body>
+</html>
